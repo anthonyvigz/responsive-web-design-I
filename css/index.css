@@ -65,13 +65,26 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-nav {
-	margin: auto;
-	width: 950px;
+.topnav {
+    margin: 0 auto;
 	display: flex;
-	justify-content: space-between;
-	align-content: center;
-	margin-top: 40px;
+    margin-top: 40px;
+    justify-content: center;
+    width: 950px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    margin-right: 60px;
+}
+
+@media (max-width: 800px) {
+    nav {
+        width: 90%;
+    }
 }
 
 .firstlink {
@@ -81,9 +94,6 @@ nav {
 a {
 	text-decoration: none;
 	color: grey;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	transition: 1s;
 }
 
