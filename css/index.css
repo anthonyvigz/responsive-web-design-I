@@ -54,7 +54,7 @@ table {
 
 html, body {
     height: 100%;
-	font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,48 +63,48 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
-
-
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 nav {
-	text-align: center;
 	margin: auto;
 	width: 950px;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	margin-top: 40px;
 }
 
 .firstlink {
 	padding-left: 0px;
 }
+
 a {
 	text-decoration: none;
 	color: grey;
-	display: inline-block;
-	vertical-align: top;
-	margin-top: 10px;
-	padding: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 1s;
 }
 
-.logo {
-	margin-top: 27px;
-	margin-left: 30px;
-}
 
 header {
 	text-align: center;
 	margin: auto;
 	width: 950px;
-	margin-top: 20px;
-	margin-bottom: 50px;
 	border-bottom: solid black 1px;
-	padding-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
 }
 
 .titlebutton {
-	display: inline-block;
-	text-align: center;
-	vertical-align: top;
-	margin: 100px 40px 0 40px;
+	display: flex;
+	width: 400px;
+	height: 275px;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 h1 {
@@ -112,14 +112,13 @@ h1 {
 }
 
 button {
-	border: solid black 1px;
 	color: black;
 	font-size: 20px;
-	display: inline-block;
 	vertical-align: top;
 	background: white;
 	padding: 1px 30px;
 	font-family: 'Titillium Web', sans-serif;
+	border: solid black 1px;
 }
 
 .headerimg {
@@ -127,19 +126,16 @@ button {
 }
 
 .top-content {
-	text-align: left;
 	margin: auto;
 	width: 950px;
-	vertical-align: top;
+	display: flex;
 }
 
 .features {
-	display: inline-block;
 	width: 450px; 
 }
 
 .about {
-	display: inline-block;
 	width: 450px;
 	margin-left: 45px;
 }
@@ -157,30 +153,25 @@ h2 {
 }
 
 .bottom-content {
-	text-align: left;
 	margin: auto;
 	width: 950px;
-	vertical-align: top;
 	margin-top: 50px;
-	display: block;
+	display: flex;
 	border-bottom: solid black 1px;
 	padding-bottom: 50px;
 }
 
 .services  {
-	display: inline-block;
 	width: 275px; 
 	margin-right: 50px;
 }
 
 .product {
-	display: inline-block;
 	width: 275px; 
 	margin-right: 50px;
 }
 
 .vision {
-	display: inline-block;
 	width: 275px; 
 }
 
@@ -206,4 +197,83 @@ button:hover {
 a:hover {
 	color: lightgreen;
 	transition: 0.5s;
+	font-size: 1.5em;
+}
+
+/* SERVICES PAGE CSS */
+
+.services-header-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	width: 950px;
+}
+
+.aboutservices {
+	display: flex;
+	margin: auto;
+	width: 950px;
+	align-content: left;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	border-bottom: solid black 1px;
+}
+
+.linkblocks {
+	display: flex;
+	width: 950px;
+	height: 900px;
+	margin: auto;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-bottom: solid black 1px;
+}
+
+.blocktype {
+	width: 450px;
+	height: 250px;
+	border: solid black 1px;
+	padding: 20px;
+	background: #ffeae2;
+}
+
+.learnmore {
+	font-size: 15px;
+	margin-top: 25px;
+	padding: 5px 40px;
+	border-radius: 5px;
+	box-shadow: 1px 2px;
+}
+
+/* line spacing for all sections */
+
+section {
+	line-height: 20px;
+}
+
+/* end line spacing */
+
+.bottomfacts {
+	display: flex;
+	width: 950px;
+	margin: auto;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.servicefacts {
+	width: 450px;
+}
+
+.services-info-img {
+	width: 450px;
+}
+
+li {
+	list-style-type: square;
+    list-style-position: inside;
+    line-height: 2;
 }
