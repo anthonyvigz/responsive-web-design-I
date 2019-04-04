@@ -65,9 +65,6 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.logo2 {
-    display: none;
-}
 
 .topnav {
     margin: 0 auto;
@@ -321,5 +318,52 @@ li {
 
     .address {
         width: 85%;
+    }
+}
+
+@media (max-width: 500px) {
+    .topnav {
+        height: 400px;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 85%;
+    }
+
+    a {
+        border-bottom: solid grey 1px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .firstlink {
+        border-top: solid grey 1px;
+        padding-top: 20px;
+    }
+
+    .top-content {
+        flex-direction: column;
+        width: 85%;
+        justify-content: space-between;
+        height: 300px;
+    }
+    .features {
+        width: 85%; 
+    }
+    
+    .about {
+        width: 85%;
+        margin-left: 0px;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        width: 85%;
+        justify-content: space-between;
+        height: 600px;
     }
 }
