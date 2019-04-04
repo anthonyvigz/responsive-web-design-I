@@ -1,3 +1,369 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
+.topnav {
+    margin: 0 auto;
+	display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    width: 950px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    margin-right: 30px;
+}
+
+
+
+.firstlink {
+	padding-left: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: grey;
+	transition: 1s;
+}
+
+
+header {
+	text-align: center;
+	margin: auto;
+	width: 950px;
+	border-bottom: solid black 1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.titlebutton {
+	width: 400px;
+    height: 275px;
+}
+
+h1 {
+	font-size: 80px;
+}
+
+button {
+	color: black;
+	font-size: 20px;
+	vertical-align: top;
+	background: white;
+	padding: 1px 30px;
+	font-family: 'Titillium Web', sans-serif;
+	border: solid black 1px;
+}
+
+.headerimg {
+	margin: 50px;
+}
+
+.top-content {
+	margin: auto;
+	width: 950px;
+	display: flex;
+}
+
+.features {
+	width: 450px; 
+}
+
+.about {
+	width: 450px;
+	margin-left: 45px;
+}
+
+.middle-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	width: 950px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+.bottom-content {
+	margin: auto;
+	width: 950px;
+	margin-top: 50px;
+	display: flex;
+	border-bottom: solid black 1px;
+	padding-bottom: 50px;
+}
+
+.services  {
+	width: 275px; 
+	margin-right: 50px;
+}
+
+.product {
+	width: 275px; 
+	margin-right: 50px;
+}
+
+.vision {
+	width: 275px; 
+}
+
+.address {
+	text-align: left;
+	margin: auto;
+	width: 950px;
+	vertical-align: top;
+	margin-top: 50px;
+}
+
+footer {
+	margin-top: 60px;
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+button:hover {
+	background: lightgreen;
+	transition: 0.5s;
+}
+
+a:hover {
+	color: lightgreen;
+	transition: 0.5s;
+	font-size: 1.5em;
+}
+
+/* SERVICES PAGE CSS */
+
+.services-header-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	width: 950px;
+}
+
+.aboutservices {
+	display: flex;
+	margin: auto;
+	width: 950px;
+	align-content: left;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	border-bottom: solid black 1px;
+}
+
+.linkblocks {
+	display: flex;
+	width: 950px;
+	height: 900px;
+	margin: auto;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-bottom: solid black 1px;
+}
+
+.blocktype {
+	width: 450px;
+	height: 250px;
+	border: solid black 1px;
+	padding: 20px;
+	background: #ffeae2;
+}
+
+.learnmore {
+	font-size: 15px;
+	margin-top: 25px;
+	padding: 5px 40px;
+	border-radius: 5px;
+	box-shadow: 1px 2px;
+}
+
+/* line spacing for all sections */
+
+section {
+	line-height: 20px;
+}
+
+/* end line spacing */
+
+.bottomfacts {
+	display: flex;
+	width: 950px;
+	margin: auto;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.servicefacts {
+	width: 450px;
+}
+
+.services-info-img {
+	width: 450px;
+}
+
+li {
+	list-style-type: square;
+    list-style-position: inside;
+    line-height: 2;
+}
+
+@media (max-width: 800px) {
+    .topnav {
+        flex-direction: column-reverse;
+        width: 85%;
+        align-items: center;
+        height: 80px;
+        justify-content: space-between;
+    }
+    nav {
+        width: 100%;
+        justify-content: space-between;
+        margin: 0;
+    }
+    header {
+        width: 85%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .headerimg {
+        display: none;
+    }
+    .top-content {
+        width: 85%;
+
+    }
+    .middle-img {
+        width: 85%;
+    }
+    .bottom-content {
+        width: 85%;
+    }
+
+    .address {
+        width: 85%;
+    }
+}
+
+@media (max-width: 500px) {
+    .topnav {
+        height: 400px;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 85%;
+    }
+
+    a {
+        border-bottom: solid grey 1px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .firstlink {
+        border-top: solid grey 1px;
+        padding-top: 20px;
+    }
+
+    .top-content {
+        flex-direction: column;
+        width: 85%;
+        justify-content: space-between;
+        height: 300px;
+    }
+    .features {
+        width: 85%; 
+    }
+    
+    .about {
+        width: 85%;
+        margin-left: 0px;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        width: 85%;
+        justify-content: space-between;
+        height: 600px;
+    }
+}
